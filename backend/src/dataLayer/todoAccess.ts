@@ -74,7 +74,7 @@ export class TodoAccess {
       },
       UpdateExpression: "set attachmentUrl = :signedUrl",
       ExpressionAttributeValues: {
-        ":signedUrl": "https://depo-todo-todo.s3.amazonaws.com/" + todoId
+        ":signedUrl": "https://depo-todo.s3.amazonaws.com/" + todoId
       },
       ReturnValues: "UPDATED_NEW"
     }).promise()
